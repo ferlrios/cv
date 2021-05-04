@@ -25,6 +25,7 @@
   align-items: center;
   /* border-bottom: 1px solid #fff; */
   box-shadow: 5px 0 10px rgba(223, 33, 166, 0.6);
+  margin-right: 0px;
 }
 
 .parallax {
@@ -213,6 +214,7 @@ body {
     rgb(151, 16, 129),
     transparent
   );
+  margin-right: 0px;
 }
 
 .img-size {
