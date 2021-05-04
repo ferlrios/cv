@@ -35,15 +35,40 @@
   background-size: cover;
 }
 
+.title-skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 150px;
+  width: auto;
+  font-size: 3em;
+}
+
+.title-skills h2 {
+  background-color: rgba(19, 19, 19, 0.82);
+  padding: 0.4em;
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+}
+
 #section-1 {
   background-image: url("images/bg-it-p.jpg");
 }
 
 .logo {
   color: white;
+  font-family: "Kaushan Script", cursive;
   font-size: 35px;
   padding: 0 80px;
-  font-weight: bold;
+}
+
+p {
+  font-weight: 300;
+  font-size: 1.1em;
 }
 
 .menu-items {
@@ -72,8 +97,11 @@
 }
 
 body {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  /* font-family: "Open Sans", Arial, Helvetica, sans-serif; */
+  font-family: "Josefin Sans", sans-serif;
   background: rgb(245, 245, 245);
+  font-style: light;
+  font-weight: 400;
 }
 
 .menu-items li:hover {
@@ -109,10 +137,11 @@ body {
   grid-template-columns: repeat(4, 10vw);
   grid-template-rows: 150px;
   grid-gap: 8vw;
+  justify-content: center;
 }
 
 .grid-item {
-  background-color: rgba(19, 19, 19, 0.753);
+  background-color: rgba(19, 19, 19, 0.82);
   padding: 2rem;
   font-size: 5rem;
   display: flex;
