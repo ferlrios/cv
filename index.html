@@ -30,9 +30,27 @@
 </nav>
 
 <header>
-    <div>
-        <!-- Aquí iria unas imagenes en slide -->
-    </div>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/bg-it.jpg" class="d-block w-100" height="600px" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/bg-it-pori.jpg" class="d-block w-100" height="600px" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/bg-it-p.jpg" class="d-block w-100" height="600px" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 </header>
 
 <section id="aboutme">
@@ -64,7 +82,7 @@
         </div>
         <div class="col-md-8 col-12">
             <div class="container progress p-0">
-                <div class="progress-bar progress-bar-striped progress-bar-animated progress-width bg-danger"> </div>
+                <div style="width: 88%" class="progress-bar progress-bar-striped progress-bar-animated bg-danger"> </div>
             </div>
         </div>
     </div>
@@ -74,7 +92,7 @@
         </div>
         <div class="col-md-8 col-12">
             <div class="container progress p-0">
-                <div class="progress-bar progress-bar-striped progress-bar-animated progress-width bg-success"> </div>
+                <div style="width: 85%" class="progress-bar progress-bar-striped progress-bar-animated blueviolet"> </div>
             </div>
         </div>
     </div>
@@ -84,7 +102,7 @@
         </div>
         <div class="col-md-8 col-12">
             <div class="container progress p-0">
-                <div class="progress-bar progress-bar-striped progress-bar-animated progress-width bg-warning"> </div>
+                <div style="width: 70%;" class="progress-bar progress-bar-striped progress-bar-animated bg-warning"> </div>
             </div>
         </div>
     </div>
@@ -94,7 +112,7 @@
         </div>
         <div class="col-md-8 col-12">
             <div class="container progress p-0">
-                <div class="progress-bar progress-bar-striped progress-bar-animated progress-width blueviolet"> </div>
+                <div style="width:55%;" class="progress-bar progress-bar-striped progress-bar-animated violet"> </div>
             </div>
         </div>
     </div>
@@ -106,16 +124,13 @@
   
 
 
-<div class="parallax" id="section-1">
-    <div class="title-skills">
-        <h2 class="text-center white">Tecnologías dominadas</h2>
-    </div>
+<div class="parallax pt-5" id="section-1">
 
-    <div class="grid-container white">
-        <div class="grid-item"><i id="html" style="color: green" class="fab fa-html5 icon"></i></div>
-        <div class="grid-item"><i id="css" style="color: red" class="fab fa-css3-alt icon"></i></div>
-        <div class="grid-item"><i id="js" style="color: orange" class="fab fa-js-square icon"></i></div>
-        <div class="grid-item"><img id="net" src="images/net.png" alt=".net logo" class="img-net"></div>
+    <div class="grid-container white mt-5">
+        <div id="html" class="grid-item"><i style="color: rgb(241, 52, 52)" class="fab fa-html5 icon"></i></div>
+        <div id="css" class="grid-item"><i style="color: rgb(43, 43, 236)" class="fab fa-css3-alt icon"></i></div>
+        <div id="js" class="grid-item"><i style="color: orange" class="fab fa-js-square icon"></i></div>
+        <div id="net" class="grid-item"><img src="images/net.png" alt=".net logo" class="img-net"></div>
     </div>
 
     <div>
@@ -174,7 +189,7 @@
     </div>
 </footer>
 
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 <script src="portfolio.js"></script>
 </body>
 </html>
