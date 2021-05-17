@@ -23,7 +23,6 @@ js.addEventListener('mouseout', ()=>{
     skillName.textContent = "";
 })
 
-
 css.addEventListener('mouseover', ()=>{
     skillName.textContent = "CSS3";
 })
@@ -44,3 +43,4 @@ net.addEventListener('mouseover', ()=>{
 net.addEventListener('mouseout', ()=>{
     skillName.textContent = "";
 })
+
