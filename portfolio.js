@@ -12,38 +12,17 @@ let showSkill = (skill) => {
   $("#skillName").text(skill);
 };
 
-$("#js").on({
-  mouseenter: function () {
-    showSkill("JavaScript");
-  },
-  mouseleave: function () {
-    showSkill("");
-  },
-});
+let añadeEvento = (element) => {
+  let id = element.id;
+  $(`#${id}`).on({
+    mouseenter: function () {
+      showSkill(element.id.toString());
+    },
+    mouseleave: function () {
+      showSkill("");
+    },
+  });
+};
 
-$("#css").on({
-  mouseenter: function () {
-    showSkill("CSS");
-  },
-  mouseleave: function () {
-    showSkill("");
-  },
-});
-
-$("#html").on({
-  mouseenter: function () {
-    showSkill("HTML");
-  },
-  mouseleave: function () {
-    showSkill("");
-  },
-});
-
-$("#net").on({
-  mouseenter: function () {
-    showSkill(".NET");
-  },
-  mouseleave: function () {
-    showSkill("");
-  },
-});
+const logosSkills = document.querySelectorAll(".grid-item");
+logosSkills.forEach((element) => añadeEvento(element));
